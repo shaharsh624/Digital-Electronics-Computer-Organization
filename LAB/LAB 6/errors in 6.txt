@@ -1,0 +1,43 @@
+testbench.sv:8: syntax error
+testbench.sv:8: error: Syntax error in instance port expression(s).
+testbench.sv:8: error: Invalid module instantiation
+testbench.sv:11: error: unmatched character (hex ?)
+testbench.sv:b: error: unmatched character (hex ?)
+testbench.sv:b: error: unmatched character (hex ?)
+testbench.sv:b: syntax error
+testbench.sv:b: error: malformed statement
+testbench.sv:c: error: unmatched character (hex ?)
+testbench.sv:c: error: unmatched character (hex ?)
+testbench.sv:c: error: unmatched character (hex ?)
+testbench.sv:c: syntax error
+testbench.sv:c: error: malformed statement
+testbench.sv:d: error: unmatched character (hex ?)
+testbench.sv:d: error: unmatched character (hex ?)
+testbench.sv:d: error: unmatched character (hex ?)
+testbench.sv:d: syntax error
+testbench.sv:d: error: malformed statement
+testbench.sv:e: error: unmatched character (hex ?)
+testbench.sv:e: error: unmatched character (hex ?)
+testbench.sv:e: error: unmatched character (hex ?)
+testbench.sv:e: syntax error
+testbench.sv:e: error: malformed statement
+testbench.sv:f: error: unmatched character (hex ?)
+testbench.sv:f: error: unmatched character (hex ?)
+testbench.sv:f: error: unmatched character (hex ?)
+testbench.sv:f: syntax error
+testbench.sv:f: error: malformed statement
+testbench.sv:10: error: unmatched character (hex ?)
+testbench.sv:10: error: unmatched character (hex ?)
+testbench.sv:10: error: unmatched character (hex ?)
+testbench.sv:10: syntax error
+testbench.sv:10: error: malformed statement
+testbench.sv:11: error: unmatched character (hex ?)
+testbench.sv:11: error: unmatched character (hex ?)
+testbench.sv:11: error: unmatched character (hex ?)
+testbench.sv:11: syntax error
+testbench.sv:11: error: malformed statement
+testbench.sv:12: error: unmatched character (hex ?)
+testbench.sv:12: error: unmatched character (hex ?)
+testbench.sv:12: error: unmatched character (hex ?)
+testbench.sv:12: syntax error
+testbench.sv:12: error: malformed statement

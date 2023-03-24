@@ -1,0 +1,4 @@
+Practice 4.1	          :         $monitor, $display
+Practice 4.5	          :         Data Flow Modelling
+Practice 2:1 Mux         :        Always block
+Practice Full Adder     :	All 3 types of Modelling

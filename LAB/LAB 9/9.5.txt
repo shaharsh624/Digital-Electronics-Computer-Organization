@@ -1,0 +1,63 @@
+module TFlipFlop(T,Clk,Q,Qbar );
+  input T,Clk;
+  output Q,Qbar;
+  reg Q;
+  initial
+    q=0;
+  always@(posedge(Clk))
+    begin
+      if(T==1)
+        q=~q;
+      else
+        q=q;
+    end
+  assign qb=~q
+    endmodule
+
+
+
+
+
+
+module TFlipFlopTB;
+  
+  // Inputs
+  reg T, Clk;
+  
+  // Outputs
+  wire Q;
+  wire Qbar;
+  
+  // Instantiate the Unit Under Test (UUT)
+  TFlipFlop uut (.T(T), .Clk(Clk), .Q(Q), .Qbar(Qbar));
+  
+    initial
+    begin
+      $dumpfile("dump.vcd");
+      $dumpvars(1);
+    end
+  
+  initial
+    begin
+      Clk = 0;
+      forever #2 Clk = ~Clk;
+    end
+  
+  initial
+    begin
+      T=0;
+      #2
+      T=1;
+      #2
+      T=1;
+      #5
+      T=0;
+      #5
+      $finish
+    end
+  initial
+    begin
+      $monitor($time, "Clk=%B, T=%B, Q=%B, QBar=%B", Clk, T, Q, QBar);
+    end
+
+endmodule

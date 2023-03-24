@@ -1,0 +1,37 @@
+// design.sv
+module fulladder(input [3:0]a,b , input cin , output sum,cout);
+  sum = a ^ b ^ cin;
+  cout = ((a&b) | (b&cin) | (cin&a));
+endmodule
+
+module circuit(input [3:0]X,Y ,input,m , output [3:0]S,C);
+  fulladder fa0(X[0] , m^Y[0] ,   m  , S[0] , C[0]);
+  fulladder fa1(X[1] , m^Y[1] , C[0] , S[1] , C[1]);
+  fulladder fa2(X[2] , m^Y[2] , C[1] , S[2] , C[2]);
+  fulladder fa3(X[3] , m^Y[3] , C[2] , S[3] , C[3]);
+endmodule
+
+
+
+// testbench.sv
+module tb_circuit;
+  input [3:0]X,Y;
+  input m;
+  output [3:0]S,C,
+  
+  circuit(X,Y,m,S,C);
+  
+  initial
+    begin
+       m  = 1'b1;
+      {X} = 4'b0100;
+      {Y} = 4'b0001;
+    end	
+  
+  initial
+    begin
+      $display("X=%b, Y=%b, m=%b, Sum=%b, Carry=%b",X,Y,m,S,C); #5 ;
+      $finish;
+    end
+endmodule
+
